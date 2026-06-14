@@ -1,131 +1,304 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика конфиденциальности | Трекер головной боли</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.7;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #1f1f1f;
-            background: #fff;
-        }
-        h1, h2, h3 {
-            color: #111;
-        }
-        h2 {
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 0.3em;
-            margin-top: 2em;
-        }
-        ul {
-            padding-left: 1.5em;
-        }
-        li {
-            margin-bottom: 0.4em;
-        }
-        a {
-            color: #0969da;
-        }
-        strong {
-            font-weight: 600;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Headache Tracker</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 60px;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+
+    .lang-btn {
+      padding: 8px 22px;
+      font-size: 14px;
+      font-weight: bold;
+      border: 2px solid #0055cc;
+      border-radius: 6px;
+      background-color: #ffffff;
+      color: #0055cc;
+      cursor: pointer;
+      transition: background-color 0.15s ease, color 0.15s ease;
+    }
+
+    .lang-btn:hover {
+      background-color: #e8f0fe;
+    }
+
+    .lang-btn.active {
+      background-color: #0055cc;
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: bold;
+      margin-top: 36px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #d0d0d0;
+      padding-bottom: 4px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    ul {
+      margin: 8px 0 8px 24px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    a {
+      color: #0055cc;
+      word-break: break-all;
+    }
+
+    .lang-block {
+      display: none;
+    }
+
+    .lang-block.visible {
+      display: block;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Политика конфиденциальности приложения «Трекер головной боли»</h1>
-<p><strong>Дата вступления в силу:</strong> 13 июня 2025 г.<br>
-<strong>Последнее обновление:</strong> 13 июня 2025 г.</p>
+  <div class="lang-switcher">
+    <button class="lang-btn active" id="btn-ru" onclick="switchLang('ru')">Русский</button>
+    <button class="lang-btn" id="btn-en" onclick="switchLang('en')">English</button>
+  </div>
 
-<h2>1. Общие положения</h2>
-<p>1.1. Настоящая Политика конфиденциальности (далее — «Политика») разработана в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных» (в редакции Федерального закона от 08.08.2024 № 420-ФЗ) и распространяется на мобильное приложение «Трекер головной боли» (далее — «Приложение») для платформы Android.</p>
-<p>1.2. Разработчиком Приложения является физическое лицо (далее — «Разработчик»), контактные данные указаны в разделе 10.</p>
-<p>1.3. Используя Приложение, пользователь подтверждает, что ознакомился с настоящей Политикой и понимает, что все вносимые им в Приложение сведения сохраняются исключительно на его устройстве и находятся под его полным контролем.</p>
-<p>1.4. Настоящая Политика размещена в открытом доступе по постоянному адресу: <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a> и доступна для ознакомления любым заинтересованным лицом без какой-либо авторизации.</p>
+  <div id="lang-ru" class="lang-block visible">
 
-<h2>2. Какие данные обрабатываются Приложением</h2>
-<p>2.1. Приложение не собирает, не передаёт и не хранит персональные данные пользователя на каких-либо серверах или внешних хранилищах.</p>
-<p>2.2. Приложение предназначено для ведения локального дневника здоровья. Пользователь самостоятельно и по собственному желанию может вносить в Приложение любые сведения, связанные с состоянием своего здоровья, самочувствием и иными обстоятельствами, которые он считает нужным зафиксировать. Состав и характер таких сведений определяется исключительно самим пользователем.</p>
-<p>2.3. Все сведения, внесённые пользователем в Приложение, сохраняются исключительно локально на устройстве пользователя. Разработчик не имеет доступа к этим данным и не осуществляет их обработку в каком-либо виде.</p>
-<p>2.4. Приложение не запрашивает и не использует следующие данные и разрешения:</p>
-<ul>
-    <li>имя, фамилию, отчество, дату рождения или иные идентификационные сведения;</li>
-    <li>адрес электронной почты, номер телефона или иные контактные данные;</li>
-    <li>данные о местоположении (GPS/геолокация);</li>
-    <li>доступ к камере, микрофону, контактам или фотогалерее устройства;</li>
-    <li>доступ к файловой системе устройства за пределами внутренней директории Приложения, за исключением временного доступа, необходимого для формирования экспортного файла (PDF/CSV) при явном использовании функции «Поделиться»;</li>
-    <li>данные учётных записей, привязанных к устройству;</li>
-    <li>идентификаторы устройства (IMEI, Android ID и аналогичные).</li>
-</ul>
-<p>2.5. Приложение не содержит рекламных сетей, аналитических SDK, счётчиков посещаемости и иных сторонних инструментов слежения.</p>
-<p>2.6. Приложение не требует подключения к сети Интернет для своей работы и не устанавливает сетевых соединений в автоматическом режиме.</p>
+    <h1>Политика конфиденциальности приложения «Трекер головной боли»</h1>
+    <div class="meta">
+      <p>Дата вступления в силу: 13 июня 2025 г.</p>
+      <p>Последнее обновление: 13 июня 2025 г.</p>
+    </div>
 
-<h2>3. Цели функционирования Приложения</h2>
-<p>3.1. Поскольку Разработчик не собирает и не обрабатывает персональные данные пользователей, раздел о целях обработки в классическом смысле ст. 5 Федерального закона № 152-ФЗ к деятельности Разработчика не применяется.</p>
-<p>3.2. Единственная цель функционирования Приложения — предоставление пользователю инструмента для самостоятельного ведения личного дневника здоровья исключительно в его собственных интересах. Обработка любых введённых сведений производится на устройстве пользователя, под его полным контролем и без участия Разработчика.</p>
+    <h2>1. Общие положения</h2>
+    <p>1.1. Настоящая Политика конфиденциальности (далее — «Политика») разработана в соответствии с требованиями Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных» (в редакции Федерального закона от 08.08.2024 № 420-ФЗ) и распространяется на мобильное приложение «Трекер головной боли» (далее — «Приложение») для платформы Android.</p>
+    <p>1.2. Разработчиком Приложения является физическое лицо Останин Родион (далее — «Разработчик»), контактные данные указаны в разделе 10 настоящей Политики.</p>
+    <p>1.3. Используя Приложение, пользователь подтверждает, что ознакомился с настоящей Политикой и понимает, что все вносимые им в Приложение сведения сохраняются исключительно на его устройстве и находятся под его полным контролем.</p>
+    <p>1.4. Настоящая Политика размещена в открытом доступе по постоянному адресу: <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a> и доступна для ознакомления любым заинтересованным лицом без какой-либо авторизации.</p>
+    <p>1.5. Настоящая Политика доступна пользователю непосредственно в интерфейсе Приложения в разделе «Настройки» → «О приложении» → «Политика конфиденциальности», а также на странице Приложения в магазине RuStore.</p>
 
-<h2>4. Хранение данных</h2>
-<p>4.1. Все данные, введённые пользователем в Приложение, хранятся локально на устройстве пользователя. Разработчик не имеет доступа к этим данным, не осуществляет их резервного копирования на внешних ресурсах и не несёт ответственности за их сохранность при удалении Приложения, сбросе настроек устройства до заводских или при повреждении либо утрате устройства.</p>
-<p>4.2. Пользователь несёт самостоятельную ответственность за сохранность введённых им данных и вправе в любой момент удалить их путём удаления Приложения с устройства или очистки данных Приложения средствами операционной системы Android.</p>
-<p>4.3. Никаких сроков хранения на стороне Разработчика не устанавливается, поскольку Разработчик не располагает какими-либо данными пользователей.</p>
+    <h2>2. Какие данные обрабатываются Приложением</h2>
+    <p>2.1. Приложение не собирает, не передаёт и не хранит персональные данные пользователя на каких-либо серверах или внешних хранилищах.</p>
+    <p>2.2. Приложение предназначено для ведения локального дневника здоровья. Пользователь самостоятельно и по собственному желанию может вносить в Приложение любые сведения, связанные с состоянием своего здоровья, самочувствием и иными обстоятельствами, которые он считает нужным зафиксировать. Состав и характер таких сведений определяется исключительно самим пользователем.</p>
+    <p>2.3. Все сведения, внесённые пользователем в Приложение, сохраняются исключительно локально на устройстве пользователя. Разработчик не имеет доступа к этим данным и не осуществляет их обработку в каком-либо виде.</p>
+    <p>2.4. Приложение не запрашивает и не использует следующие данные и разрешения:</p>
+    <ul>
+      <li>имя, фамилию, отчество, дату рождения или иные идентификационные сведения;</li>
+      <li>адрес электронной почты, номер телефона или иные контактные данные;</li>
+      <li>данные о местоположении (GPS/геолокация);</li>
+      <li>доступ к камере, микрофону, контактам или фотогалерее устройства;</li>
+      <li>доступ к внешнему хранилищу устройства (разрешения READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE не запрашиваются). При использовании функции «Поделиться» временный экспортный файл создаётся во внутреннем хранилище Приложения и передаётся целевому приложению через стандартный механизм Android FileProvider без прямого доступа к файловой системе устройства;</li>
+      <li>данные учётных записей, привязанных к устройству;</li>
+      <li>идентификаторы устройства (IMEI, Android ID и аналогичные).</li>
+    </ul>
+    <p>2.5. Приложение не содержит рекламных сетей, аналитических SDK, счётчиков посещаемости и иных сторонних инструментов слежения.</p>
+    <p>2.6. Приложение не требует подключения к сети Интернет для своей работы и не устанавливает сетевых соединений в автоматическом режиме.</p>
 
-<h2>5. Передача данных третьим лицам</h2>
-<p>5.1. Разработчик не передаёт никакие данные пользователей третьим лицам, государственным органам, рекламным сетям или иным организациям, поскольку не осуществляет сбор таких данных.</p>
-<p>5.2. Приложение не интегрировано ни с какими сторонними сервисами, облачными платформами, социальными сетями или системами аналитики.</p>
-<p>5.3. <strong>Функция «Поделиться» (экспорт отчёта).</strong> Приложение предоставляет пользователю возможность сформировать отчёт о зарегистрированных приступах в формате PDF или CSV и передать его через стандартное системное меню обмена данными Android (Intent Chooser).</p>
-<ul>
-    <li>Данная функция активируется исключительно по явному и осознанному действию самого пользователя — нажатию соответствующей кнопки в интерфейсе Приложения.</li>
-    <li>Разработчик не участвует в передаче данных, не получает копии экспортируемого файла и не имеет технической возможности отследить, кому и каким образом пользователь передаёт сформированный отчёт.</li>
-    <li>Ответственность за дальнейшее использование и распространение экспортированного файла несёт исключительно сам пользователь.</li>
-    <li>Условия обработки данных приложением-получателем (почтовый клиент, мессенджер, облачное хранилище и т. д.) регулируются политикой конфиденциальности соответствующего приложения.</li>
-</ul>
+    <h2>3. Цели функционирования Приложения</h2>
+    <p>3.1. Поскольку Разработчик не собирает и не обрабатывает персональные данные пользователей, раздел о целях обработки в классическом смысле ст. 5 Федерального закона № 152-ФЗ к деятельности Разработчика не применяется.</p>
+    <p>3.2. Единственная цель функционирования Приложения — предоставление пользователю инструмента для самостоятельного ведения личного дневника здоровья исключительно в его собственных интересах. Обработка любых введённых сведений производится на устройстве пользователя, под его полным контролем и без участия Разработчика.</p>
 
-<h2>6. Специальные категории данных</h2>
-<p>6.1. Сведения о состоянии здоровья человека в соответствии со ст. 10 Федерального закона № 152-ФЗ относятся к специальным категориям персональных данных.</p>
-<p>6.2. Разработчик специально обращает внимание пользователей на то, что вносимые в Приложение сведения о приступах головной боли могут квалифицироваться как данные о состоянии здоровья.</p>
-<p>6.3. Поскольку вносимые пользователем сведения о состоянии здоровья сохраняются исключительно на устройстве самого пользователя, под его полным контролем, и никогда не поступают к Разработчику, обработка таких сведений в рамках Приложения осуществляется непосредственно самим субъектом персональных данных в его собственных интересах (ст. 10 ч. 2 п. 1 Федерального закона № 152-ФЗ). Разработчик не имеет доступа к указанным сведениям, не определяет способы их дальнейшей обработки субъектом и не несёт обязанностей, которые Федеральный закон № 152-ФЗ возлагает на операторов, осуществляющих обработку персональных данных.</p>
+    <h2>4. Хранение данных</h2>
+    <p>4.1. Все данные, введённые пользователем в Приложение, хранятся локально на устройстве пользователя. Разработчик не имеет доступа к этим данным, не осуществляет их резервного копирования на внешних ресурсах и не несёт ответственности за их сохранность при удалении Приложения, сбросе настроек устройства до заводских или при повреждении либо утрате устройства.</p>
+    <p>4.2. Пользователь несёт самостоятельную ответственность за сохранность введённых им данных и вправе в любой момент удалить их путём удаления Приложения с устройства или очистки данных Приложения средствами операционной системы Android.</p>
+    <p>4.3. Никаких сроков хранения на стороне Разработчика не устанавливается, поскольку Разработчик не располагает какими-либо данными пользователей.</p>
 
-<h2>7. Об информации медицинского характера</h2>
-<p>7.1. Приложение «Трекер головной боли» является инструментом для личного самонаблюдения и не является медицинским изделием, не предназначено для постановки диагноза, назначения лечения или замены консультации квалифицированного медицинского специалиста.</p>
-<p>7.2. Вносимые пользователем сведения не анализируются Разработчиком и не являются основанием для каких-либо медицинских рекомендаций со стороны Разработчика.</p>
+    <h2>5. Передача данных третьим лицам</h2>
+    <p>5.1. Разработчик не передаёт никакие данные пользователей третьим лицам, государственным органам, рекламным сетям или иным организациям, поскольку не осуществляет сбор таких данных.</p>
+    <p>5.2. Приложение не интегрировано ни с какими сторонними сервисами, облачными платформами, социальными сетями или системами аналитики.</p>
+    <p>5.3. <strong>Функция «Поделиться» (экспорт отчёта).</strong> Приложение предоставляет пользователю возможность сформировать отчёт о зарегистрированных приступах в формате PDF или CSV и передать его через стандартное системное меню обмена данными Android (Intent Chooser).</p>
+    <ul>
+      <li>Данная функция активируется исключительно по явному и осознанному действию самого пользователя — нажатию соответствующей кнопки в интерфейсе Приложения.</li>
+      <li>Разработчик не участвует в передаче данных, не получает копии экспортируемого файла и не имеет технической возможности отследить, кому и каким образом пользователь передаёт сформированный отчёт.</li>
+      <li>Ответственность за дальнейшее использование и распространение экспортированного файла несёт исключительно сам пользователь.</li>
+      <li>Условия обработки данных приложением-получателем (почтовый клиент, мессенджер, облачное хранилище и т. д.) регулируются политикой конфиденциальности соответствующего приложения.</li>
+    </ul>
 
-<h2>8. Права пользователя</h2>
-<p>8.1. В соответствии с Федеральным законом № 152-ФЗ субъект персональных данных имеет право на:</p>
-<ul>
-    <li>получение информации, касающейся обработки его персональных данных;</li>
-    <li>требование уточнения, блокирования или уничтожения персональных данных в случае, если они являются неполными, устаревшими, неточными, незаконно полученными или не являются необходимыми для заявленной цели обработки;</li>
-    <li>отзыв согласия на обработку персональных данных;</li>
-    <li>обжалование действий или бездействия оператора в уполномоченном органе по защите прав субъектов персональных данных (Роскомнадзор) или в судебном порядке;</li>
-    <li>защиту своих прав и законных интересов, в том числе возмещение убытков и (или) компенсацию морального вреда в судебном порядке.</li>
-</ul>
-<p>8.2. Поскольку Разработчик не собирает и не хранит персональные данные пользователей на своих ресурсах, реализация большинства из указанных прав осуществляется пользователем самостоятельно непосредственно на его устройстве (путём редактирования или удаления записей в Приложении, а также удаления самого Приложения).</p>
-<p>8.3. По любым вопросам, связанным с настоящей Политикой или обработкой данных, пользователь вправе обратиться к Разработчику по контактным данным, указанным в разделе 10 настоящей Политики.</p>
+    <h2>6. Специальные категории данных</h2>
+    <p>6.1. Сведения о состоянии здоровья человека в соответствии со ст. 10 Федерального закона № 152-ФЗ относятся к специальным категориям персональных данных.</p>
+    <p>6.2. Разработчик специально обращает внимание пользователей на то, что вносимые в Приложение сведения о приступах головной боли могут квалифицироваться как данные о состоянии здоровья.</p>
+    <p>6.3. Поскольку вносимые пользователем сведения о состоянии здоровья сохраняются исключительно на устройстве самого пользователя, под его полным контролем, и никогда не поступают к Разработчику, обработка таких сведений в рамках Приложения осуществляется непосредственно самим субъектом персональных данных в его собственных интересах (ст. 10 ч. 2 п. 1 Федерального закона № 152-ФЗ). Разработчик не имеет доступа к указанным сведениям, не определяет способы их дальнейшей обработки субъектом и не несёт обязанностей, которые Федеральный закон № 152-ФЗ возлагает на операторов, осуществляющих обработку персональных данных.</p>
 
-<h2>9. Безопасность данных</h2>
-<p>9.1. Безопасность данных, введённых в Приложение, обеспечивается стандартными механизмами защиты операционной системы Android: данные хранятся во внутреннем хранилище Приложения в изолированной «песочнице» (App Sandbox) и недоступны другим приложениям без root-прав.</p>
-<p>9.2. Разработчик рекомендует пользователям самостоятельно соблюдать общие меры безопасности: использовать защиту экрана устройства (PIN-код, пароль или биометрию), не предоставлять устройство посторонним лицам, своевременно устанавливать обновления операционной системы.</p>
-<p>9.3. Разработчик принял все зависящие от него технические меры для исключения несанкционированного доступа к данным пользователей. Исходный код Приложения не содержит сторонних SDK, рекламных библиотек или библиотек аналитики, что подтверждается отсутствием соответствующих зависимостей в сборке Приложения.</p>
+    <h2>7. Об информации медицинского характера</h2>
+    <p>7.1. Приложение «Трекер головной боли» является инструментом для личного самонаблюдения и не является медицинским изделием, не предназначено для постановки диагноза, назначения лечения или замены консультации квалифицированного медицинского специалиста.</p>
+    <p>7.2. Вносимые пользователем сведения не анализируются Разработчиком и не являются основанием для каких-либо медицинских рекомендаций со стороны Разработчика.</p>
+    <p>7.3. Приложение не зарегистрировано в качестве медицинского изделия в соответствии с Федеральным законом от 21.11.2011 № 323-ФЗ «Об основах охраны здоровья граждан в Российской Федерации» и не предназначено для использования в медицинских целях.</p>
 
-<h2>10. Контактные данные разработчика</h2>
-<p>По всем вопросам, связанным с настоящей Политикой, функционированием Приложения или защитой данных, вы можете обратиться к Разработчику:</p>
-<ul>
-    <li><strong>Адрес электронной почты:</strong> <a href="mailto:feedback@doc-apps.ru">feedback@doc-apps.ru</a></li>
-</ul>
-<p>Разработчик обязуется рассмотреть обращение в срок, не превышающий 30 (тридцати) календарных дней с даты его получения.</p>
+    <h2>8. Права пользователя</h2>
+    <p>8.1. В соответствии с Федеральным законом № 152-ФЗ субъект персональных данных обладает правами в отношении своих данных. Поскольку Разработчик не является оператором в смысле ст. 3 Федерального закона № 152-ФЗ и не имеет доступа к данным пользователей, перечисленные ниже права реализуются пользователем самостоятельно — непосредственно на его устройстве:</p>
+    <ul>
+      <li><strong>Право на доступ к данным</strong> — просмотр всех записей в интерфейсе Приложения;</li>
+      <li><strong>Право на уточнение и исправление</strong> — редактирование записей в Приложении;</li>
+      <li><strong>Право на удаление</strong> — удаление отдельных записей или всех данных путём очистки данных Приложения либо его полного удаления с устройства;</li>
+      <li><strong>Право на экспорт (переносимость)</strong> — функция «Поделиться» (экспорт в форматах PDF/CSV);</li>
+      <li><strong>Право на обжалование</strong> — обращение в Роскомнадзор (<a href="https://rkn.gov.ru">rkn.gov.ru</a>) или в суд по вопросам нарушения законодательства о персональных данных.</li>
+    </ul>
+    <p>8.2. По любым вопросам, связанным с настоящей Политикой или обработкой данных, пользователь вправе обратиться к Разработчику по контактным данным, указанным в разделе 10 настоящей Политики.</p>
 
-<h2>11. Изменения настоящей Политики</h2>
-<p>11.1. Разработчик оставляет за собой право вносить изменения в настоящую Политику в одностороннем порядке. О существенных изменениях пользователь уведомляется посредством публикации новой редакции Политики на постоянной странице <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a> с обновлением даты «Последнего обновления» в заголовке документа. Новая редакция Политики вступает в силу с момента её публикации, если иное не предусмотрено новой редакцией.</p>
-<p>11.2. Действующая версия Политики всегда доступна по постоянной ссылке: <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a>, указанной на странице Приложения в магазине RuStore.</p>
-<p>11.3. Продолжение использования Приложения после вступления в силу новой редакции Политики означает согласие пользователя с изменениями, не затрагивающими характер обработки данных. В случае если изменения предполагают передачу данных пользователя третьим лицам или иное расширение объёма обработки, такие изменения вступают в силу только после получения явного согласия пользователя.</p>
+    <h2>9. Безопасность данных</h2>
+    <p>9.1. Безопасность данных, введённых в Приложение, обеспечивается стандартными механизмами защиты операционной системы Android: данные хранятся во внутреннем хранилище Приложения в изолированной «песочнице» (App Sandbox) и недоступны другим приложениям без root-прав.</p>
+    <p>9.2. Разработчик рекомендует пользователям самостоятельно соблюдать общие меры безопасности: использовать защиту экрана устройства (PIN-код, пароль или биометрию), не предоставлять устройство посторонним лицам, своевременно устанавливать обновления операционной системы.</p>
+    <p>9.3. С целью исключения несанкционированного доступа к данным пользователей Разработчиком реализованы следующие технические меры: данные хранятся в изолированном внутреннем хранилище Приложения (App Internal Storage); сборка Приложения не содержит сторонних SDK, рекламных или аналитических библиотек; Приложение не запрашивает сетевые разрешения (INTERNET, ACCESS_NETWORK_STATE) и не устанавливает соединений с внешними серверами.</p>
 
-<h2>12. Применимое право</h2>
-<p>12.1. Настоящая Политика разработана в соответствии с законодательством Российской Федерации, в том числе с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» (в редакции Федерального закона от 08.08.2024 № 420-ФЗ).</p>
-<p>12.2. Все споры, возникающие в связи с настоящей Политикой, подлежат рассмотрению в соответствии с законодательством Российской Федерации.</p>
+    <h2>10. Контактные данные разработчика</h2>
+    <p>По всем вопросам, связанным с настоящей Политикой, функционированием Приложения или защитой данных, вы можете обратиться к Разработчику:</p>
+    <p><strong>Разработчик:</strong> Останин Родион<br><strong>Адрес электронной почты:</strong> <a href="mailto:feedback@doc-apps.ru">feedback@doc-apps.ru</a></p>
+    <p>Разработчик обязуется рассмотреть обращение в срок, не превышающий 30 (тридцати) календарных дней с даты его получения.</p>
+
+    <h2>11. Изменения настоящей Политики</h2>
+    <p>11.1. Разработчик оставляет за собой право вносить изменения в настоящую Политику. Об изменениях, не затрагивающих характер, объём и цели обработки данных пользователей, Разработчик уведомляет путём публикации новой редакции Политики по постоянному адресу <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a> с обновлением даты «Последнего обновления» в заголовке документа. Такие изменения вступают в силу с момента публикации. <strong>Существенными изменениями</strong>, требующими отдельного уведомления пользователей в интерфейсе Приложения, признаются: начало сбора персональных данных Разработчиком, передача данных пользователей третьим лицам, введение сетевого взаимодействия Приложения с внешними серверами. Такие изменения вступают в силу только после получения явного согласия пользователя непосредственно в интерфейсе Приложения.</p>
+    <p>11.2. Действующая версия Политики всегда доступна по постоянной ссылке: <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a>, указанной на странице Приложения в магазине RuStore.</p>
+    <p>11.3. Продолжение использования Приложения после вступления в силу новой редакции Политики означает согласие пользователя с изменениями, не затрагивающими характер обработки данных. В случае если изменения предполагают передачу данных пользователя третьим лицам или иное расширение объёма обработки, такие изменения вступают в силу только после получения явного согласия пользователя.</p>
+
+    <h2>12. Применимое право</h2>
+    <p>12.1. Настоящая Политика разработана в соответствии с законодательством Российской Федерации, в том числе с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» (в редакции Федерального закона от 08.08.2024 № 420-ФЗ), а также с Федеральным законом от 27.07.2006 № 149-ФЗ «Об информации, информационных технологиях и о защите информации».</p>
+    <p>12.2. Все споры, возникающие в связи с настоящей Политикой, подлежат рассмотрению в соответствии с законодательством Российской Федерации.</p>
+
+  </div>
+
+  <div id="lang-en" class="lang-block">
+
+    <h1>Privacy Policy for the "Headache Tracker" Application</h1>
+    <div class="meta">
+      <p>Effective date: June 13, 2025</p>
+      <p>Last updated: June 13, 2025</p>
+    </div>
+
+    <h2>1. General Provisions</h2>
+    <p>1.1. This Privacy Policy (hereinafter — the "Policy") applies to the "Headache Tracker" mobile application (hereinafter — the "Application") for the Android platform.</p>
+    <p>1.2. The Application is developed by an individual, Rodion Ostanin (hereinafter — the "Developer"). Contact details are provided in Section 10 of this Policy.</p>
+    <p>1.3. By using the Application, the user confirms that they have read this Policy and understand that all information entered into the Application is stored exclusively on their device and remains under their full control.</p>
+    <p>1.4. This Policy is publicly available at the permanent URL: <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a> and may be accessed by any interested person without any authorization.</p>
+    <p>1.5. This Policy is accessible to the user directly within the Application interface under Settings → About → Privacy Policy, and also on the Application's page in the RuStore marketplace.</p>
+
+    <h2>2. Data Processed by the Application</h2>
+    <p>2.1. The Application does not collect, transmit, or store any personal data of the user on any servers or external storage.</p>
+    <p>2.2. The Application is designed for maintaining a local personal health diary. The user may voluntarily enter any information relating to their health condition, well-being, or other circumstances they wish to record. The content and nature of such information is determined solely by the user.</p>
+    <p>2.3. All information entered by the user into the Application is stored exclusively on the user's device. The Developer has no access to this data and does not process it in any form.</p>
+    <p>2.4. The Application does not request or use the following data or permissions:</p>
+    <ul>
+      <li>full name, date of birth, or other identifying information;</li>
+      <li>email address, phone number, or other contact details;</li>
+      <li>location data (GPS/geolocation);</li>
+      <li>access to the device's camera, microphone, contacts, or photo gallery;</li>
+      <li>access to external device storage (the READ_EXTERNAL_STORAGE and WRITE_EXTERNAL_STORAGE permissions are not requested). When using the Share feature, a temporary export file is created in the Application's internal storage and passed to the target application via the standard Android FileProvider mechanism, without direct access to the device's file system;</li>
+      <li>account credentials associated with the device;</li>
+      <li>device identifiers (IMEI, Android ID, or similar).</li>
+    </ul>
+    <p>2.5. The Application does not include any advertising networks, analytics SDKs, usage trackers, or any other third-party tracking tools.</p>
+    <p>2.6. The Application does not require an internet connection to function and does not establish any network connections automatically.</p>
+
+    <h2>3. Purpose of the Application</h2>
+    <p>3.1. Since the Developer does not collect or process any personal data of users, the provisions on purposes of data processing do not apply to the Developer's activities in the traditional sense.</p>
+    <p>3.2. The sole purpose of the Application is to provide the user with a tool for independently maintaining a personal health diary, exclusively in the user's own interests. Any processing of entered data occurs on the user's device, under their full control, and without any involvement from the Developer.</p>
+
+    <h2>4. Data Storage</h2>
+    <p>4.1. All data entered by the user into the Application is stored locally on the user's device. The Developer has no access to this data, does not create backups on external resources, and is not responsible for its preservation in the event of Application deletion, factory reset, or device damage or loss.</p>
+    <p>4.2. The user is solely responsible for the safety of their entered data and may delete it at any time by uninstalling the Application or clearing the Application's data via the Android operating system settings.</p>
+    <p>4.3. No data retention periods apply on the Developer's side, as the Developer does not hold any user data.</p>
+
+    <h2>5. Sharing Data with Third Parties</h2>
+    <p>5.1. The Developer does not share any user data with third parties, government authorities, advertising networks, or any other organizations, as no such data is collected.</p>
+    <p>5.2. The Application is not integrated with any third-party services, cloud platforms, social networks, or analytics systems.</p>
+    <p>5.3. <strong>Share feature (report export).</strong> The Application allows the user to generate a report of recorded episodes in PDF or CSV format and share it via the standard Android system sharing menu (Intent Chooser).</p>
+    <ul>
+      <li>This feature is activated exclusively by an explicit and deliberate action of the user — by tapping the corresponding button in the Application interface.</li>
+      <li>The Developer takes no part in the data transfer, does not receive a copy of the exported file, and has no technical means to track to whom or how the user shares the generated report.</li>
+      <li>The user bears sole responsibility for any further use or distribution of the exported file.</li>
+      <li>The data processing terms of the receiving application (email client, messenger, cloud storage, etc.) are governed by that application's own privacy policy.</li>
+    </ul>
+
+    <h2>6. Special Categories of Data</h2>
+    <p>6.1. Information about a person's health condition constitutes a special category of personal data under applicable data protection law.</p>
+    <p>6.2. The Developer specifically draws users' attention to the fact that information about headache episodes entered into the Application may qualify as health-related data.</p>
+    <p>6.3. Since health-related information entered by the user is stored exclusively on the user's own device, under their full control, and never reaches the Developer, such data is processed solely by the data subject themselves in their own personal interests. The Developer has no access to such information, does not determine the manner of its further processing by the user, and bears no obligations that data protection law imposes on operators or controllers who process personal data.</p>
+
+    <h2>7. Medical Disclaimer</h2>
+    <p>7.1. The "Headache Tracker" application is a personal self-monitoring tool and is not a medical device. It is not intended for diagnosing conditions, prescribing treatment, or replacing consultation with a qualified medical professional.</p>
+    <p>7.2. Information entered by the user is not analyzed by the Developer and does not constitute the basis for any medical recommendations on the Developer's part.</p>
+    <p>7.3. The Application is not registered as a medical device and is not intended for use in medical contexts.</p>
+
+    <h2>8. User Rights</h2>
+    <p>8.1. Users have rights with respect to their personal data under applicable data protection law. Since the Developer does not act as a data controller and has no access to user data, the rights listed below are exercised by the user independently — directly on their own device:</p>
+    <ul>
+      <li><strong>Right of access</strong> — viewing all records in the Application interface;</li>
+      <li><strong>Right to rectification</strong> — editing records in the Application;</li>
+      <li><strong>Right to erasure</strong> — deleting individual records or all data by clearing the Application's data or fully uninstalling it from the device;</li>
+      <li><strong>Right to data portability</strong> — using the Share feature (export to PDF/CSV formats);</li>
+      <li><strong>Right to lodge a complaint</strong> — contacting the relevant data protection authority or a court regarding violations of personal data legislation.</li>
+    </ul>
+    <p>8.2. For any questions related to this Policy or data processing, the user may contact the Developer using the contact details provided in Section 10 of this Policy.</p>
+
+    <h2>9. Data Security</h2>
+    <p>9.1. The security of data entered into the Application is provided by the standard protection mechanisms of the Android operating system: data is stored in the Application's internal storage within an isolated App Sandbox and is inaccessible to other applications without root privileges.</p>
+    <p>9.2. The Developer recommends that users follow general security practices: use a screen lock (PIN, password, or biometrics), avoid handing the device to unauthorized persons, and install operating system updates in a timely manner.</p>
+    <p>9.3. To prevent unauthorized access to user data, the Developer has implemented the following technical measures: data is stored in the Application's isolated internal storage (App Internal Storage); the Application build contains no third-party SDKs, advertising libraries, or analytics libraries; the Application does not request network permissions (INTERNET, ACCESS_NETWORK_STATE) and does not establish connections to external servers.</p>
+
+    <h2>10. Developer Contact Information</h2>
+    <p>For any questions related to this Policy, the functioning of the Application, or data protection, please contact the Developer:</p>
+    <p><strong>Developer:</strong> Rodion Ostanin<br><strong>Email:</strong> <a href="mailto:feedback@doc-apps.ru">feedback@doc-apps.ru</a></p>
+    <p>The Developer undertakes to respond to any inquiry within 30 (thirty) calendar days of the date of receipt.</p>
+
+    <h2>11. Changes to This Policy</h2>
+    <p>11.1. The Developer reserves the right to amend this Policy. For changes that do not affect the nature, scope, or purposes of user data processing, the Developer will notify users by publishing an updated version of the Policy at the permanent URL <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a> and updating the "Last updated" date in the document header. Such changes take effect upon publication. <strong>Material changes</strong> — including the commencement of personal data collection by the Developer, the sharing of user data with third parties, or the introduction of network communication between the Application and external servers — require a separate in-app notification and take effect only after the user's explicit consent is obtained within the Application interface.</p>
+    <p>11.2. The current version of the Policy is always available at the permanent link: <a href="https://ostanin-app.github.io/privacy-policy-headache-tracker/">https://ostanin-app.github.io/privacy-policy-headache-tracker/</a>, as indicated on the Application's page in the RuStore marketplace.</p>
+    <p>11.3. Continued use of the Application after a new version of the Policy takes effect constitutes the user's acceptance of changes that do not affect the nature of data processing. Where changes involve the sharing of user data with third parties or any other expansion of data processing, such changes take effect only after the user's explicit consent is obtained.</p>
+
+    <h2>12. Governing Law</h2>
+    <p>12.1. This Policy is governed by the legislation of the Russian Federation, including Federal Law No. 152-FZ of July 27, 2006 "On Personal Data" (as amended by Federal Law No. 420-FZ of August 8, 2024), and Federal Law No. 149-FZ of July 27, 2006 "On Information, Information Technologies and the Protection of Information".</p>
+    <p>12.2. Any disputes arising in connection with this Policy shall be resolved in accordance with the legislation of the Russian Federation.</p>
+
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('lang-ru').classList.toggle('visible', lang === 'ru');
+      document.getElementById('lang-en').classList.toggle('visible', lang === 'en');
+      document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.documentElement.lang = lang;
+    }
+  </script>
 
 </body>
 </html>
